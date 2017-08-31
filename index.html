@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>Practisis S.A. </title>
+    <link rel="stylesheet" href="estilo.css">
+    <script src="main.js"></script>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="section">
+        <!--Formulario-->
+        <form id = "form1" method="post" action ="datos.php" class="formulario" onsubmit="return validar();">
+          <h1 class="form__title">Formulario de Validación</h1>
+          <!--Usuario -->
+          <input type="text" name="usuario" value="" id = "user" class = "form__input">
+          <label for="username" class = "form__label">Nombre de Usuario</label>
+          <!--Nombre -->
+          <input type="text" name="name" value="" id = "name" class = "form__input">
+          <label for="name" class = "form__label">Nombre</label>
+          <!-- Apellido-->
+          <input type="text" name="lname" value="" id = "lname" class = "form__input">
+          <label for="lname" class = "form__label">Apellido</label>
+          <!--Cedula de Identidad -->
+          <input type="number" name="cedu" value="" id = "cedu" class = "form__input">
+          <label for="cedula" class = "form__label">Cédula de Identidad</label>
+          <!--Contrasena -->
+          <input type="password" name="pass" value="" id="pass" class = "form__input">
+          <label for="password" class = "form__label">Contraseña</label>
+          <!--Mail -->
+          <input type="text" name="mail" value="" id="mail" class = "form__input">
+          <label for="mail" class = "form__label">Correo Electrónico</label>
+          <div >
+            <!--Boton de envio -->
+            <input type="submit" name="enviar" value="Enviar" class="form__submit">
+          </div>
+        </form>
+      </div>
+    </div>
+    <script src="estilo.js"> </script>
+  </body>
+</html>
